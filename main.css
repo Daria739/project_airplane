@@ -46,14 +46,13 @@ header {
 
 header .logo {
     float: left;
-    vertical-align: left;
     margin-top: 20px;
 }
 
 .contacts {
     float: right;
     margin-top: 11px;
-    max-width: 100%;
+    width: 173px;
     text-align: right;
 }
 
@@ -66,6 +65,8 @@ header .logo {
 
 
 .contacts__description {
+    background: none;
+    border: none;
     color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
     text-decoration: underline;
@@ -83,8 +84,9 @@ header .logo {
 }
 
 .sidebar {
-    width: 15%;
+    width: 20%;
     float: left;
+    
 }
 
 .menu__item {
@@ -102,9 +104,13 @@ header .logo {
     vertical-align: middle;
 }
 
+.menu__link:hover {
+    color: #221f1f;
+}
+
 .menu__link::before {
     content: "";
-    padding-right: 30px;
+    margin-right: 19px;
     display: inline-block;
     vertical-align: middle;
     width: 24px;
@@ -138,16 +144,18 @@ header .logo {
 
 
 .title {
+    margin-top: 25px;
     font-weight: 700;
     font-size: 49px;
     color: #221f1f;
-    margin-bottom: 13px;
+    margin-bottom: 27px;
 }
 
 h3.title {
     font-size: 11px;
     letter-spacing: 0.24em;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .tariffs {
@@ -162,7 +170,7 @@ h3.title {
     padding-top: 40px;
 }
 
-.tariffs__item_mark {
+.tariffs__item:hover {
     border-radius: 5px;
     border: 1px solid #e8e9ed;
 }
@@ -191,9 +199,10 @@ h3.title {
 .tariffs__description {
     display: inline-block;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.8em;
     text-align: center;
+    vertical-align: middle;
 }
 
 .tariffs__description-list li {
@@ -223,13 +232,13 @@ text-align: center;
 
 .tariffs__price_number {
     font-size: 54px;
-    font-weight: regular;
+    font-weight: 400;
     padding-left: 4px;
 }
 
 
 .news__list {
-    margin-top: 35px;
+    margin-top: 70px;
 }
 
 .news__item {
@@ -290,9 +299,16 @@ text-align: center;
     display: inline-block;
 }
 
-..pagination__controlls {
+.pagination__controlls {
     vertical-align: middle;
+    margin-left: 20px;
 }
+
+.pagination__item {
+    
+    margin-right: 11px;
+}
+
 .pagination__display {
     font-size: 14px;
     font-weight: 300;
@@ -306,11 +322,26 @@ text-align: center;
     text-decoration: none;
 }
 
+.pagination__prev, 
+.pagination__next {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.pagination__prev {
+    color: #dbdbdb;
+    margin-right: 11px;
+}
+
 .pagination__item_active {
     width: 26px;
     height: 26px;
     background-color: #4b73b5;
     border-radius: 2px;
+}
+
+.pagination__controlls .pagination__link:hover {
+    color: #4b73b5;
 }
 
 .pagination__link_active {
@@ -322,14 +353,9 @@ text-align: center;
 
 
 .footer {
-    float: left;
     min-height: 75px;
     width: 100%;
     background-color: #4b73b5;
-}
-
-.footer__container {
-    margin-top: 20px;
 }
 
 .footer__info {
@@ -337,7 +363,8 @@ text-align: center;
     width: 237px;
     font-size: 14px;
     color: #fff;
-
+    margin-top: 16px;
+    margin-bottom: 11px;
 }
 
 .footer__info a {
@@ -349,12 +376,14 @@ text-align: center;
     float: left;
     width: 123px;
     margin-left: 236px;
+    margin-top: 25px;
 }
 
 .footer__social {
     width: 156px;
     color: #fff;
     float: right;
+    margin-top: 20px;
 }
 
 .footer__social h3 {
