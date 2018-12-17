@@ -3,7 +3,7 @@ display: flex;
 justify-content: center;
 align-content: center;
 margin-top: 60px;
-}    
+}
 
 .form {
 display: flex;
@@ -15,26 +15,42 @@ background-color: #f5f5f5;
 border-radius: 3px;
 margin-left: 200px;
 margin-right: 200px;
-margin-top: 58px;
-margin-bottom: 52px;
-padding: 35px 66px;
+margin-bottom: 60px;
+padding: 50px 70px;
+
 }
 
+.form__title {
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+.form__content {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.form__about-user {
+    display: flex;
+    justify-content: space-between;
+    width: 560px;
+}
 
 .form__user-info {
     display: flex;
     justify-content: space-between;
-    max-width: 560px;
     margin-bottom: 20px;
 }
 
-.form__label, .form__question-checkbox-text {
+.form__label {
     font-weight: 300;
     font-size: 14px;
     color: #221f1f;
 }
 
 .form__input-text {
+    font-weight: 300;
+    font-size: 14px;
     width: 270px;
     border-radius: 3px;
     border: none;
@@ -42,11 +58,26 @@ padding: 35px 66px;
     padding-top: 17px;
     padding-left: 10px;
     margin-right: 20px;
+    margin-top: 11px;
+}
+
+.form__input-text:focus,
+.form__user-review-text:focus {
+border: 1px solid #4b73b5;
+}
+
+
+
+.form__user-review {
+    margin-top: 30px;
 }
 
 
 .form__user-review-text {
-    width: 560px;
+    margin-top: 11px;
+    font-weight: 300;
+    font-size: 14px;
+    width: 570px;
     border-radius: 3px;
     border: none;
     padding-top: 10px;
@@ -54,10 +85,22 @@ padding: 35px 66px;
     min-height: 90px;
 }
 
-.form__button {
+.form__answers {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 11px;
+}
+
+.form__radio-and-btn {
     display: flex;
-    justify-content: flex-end;
-    margin-top: -20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form__radio-block {
+    display: flex;
+    flex-direction: column;
 }
 
 .form__button_send {
@@ -67,6 +110,18 @@ padding: 35px 66px;
     color: #fff;
     border-radius: 3px;
     border: none;
+    padding-top: 19px;
+    padding-bottom: 30px;
+}
+
+.form__button_send:hover {
+    background-color: #1c5bc3;
+}
+
+.form__button_send:active {
+    background-color: #fff;
+    border: 1px solid #1c5bc3;
+    color: #1c5bc3;
 }
 
 .form__button_name {
@@ -80,8 +135,22 @@ padding: 35px 66px;
 
 .form__button_name::after {
 content: "";
-background-image: url('./img/button-icon.png') no-repeat;
+background-image: url('../img/button-icon.png');
+background-repeat: no-repeat;
 width: 15px;
 height: 15px;
+display: inline-block;
+vertical-align: middle;
+margin-left: 10px;
 }
 
+.form__button_name:active:after {
+content: "";
+background-image: url('../img/button-icon-active.png');
+background-repeat: no-repeat;
+width: 15px;
+height: 15px;
+display: inline-block;
+vertical-align: middle;
+margin-left: 10px;
+}

@@ -21,9 +21,7 @@ body {
 
 .container {
     max-width: 1100px;
-    height: 100%;
     margin: 0 auto;
-    flex: 1 0 auto;
 }
 
 ul {
@@ -43,10 +41,10 @@ li {
 
 .main__container {
     display: flex;
+    justify-content: space-between;
 }
 
 .main__content{
-    margin-left: 35px;
     width: 80%; 
     min-width: 920px;
     display: flex;
