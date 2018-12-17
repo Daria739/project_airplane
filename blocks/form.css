@@ -146,7 +146,7 @@ margin-left: 10px;
 
 .form__button_name:active:after {
 content: "";
-background-image: url('./img/button-icon-active.png');
+background-image: url('../img/button-icon-active.png');
 background-repeat: no-repeat;
 width: 15px;
 height: 15px;
