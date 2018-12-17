@@ -1,0 +1,64 @@
+.sidebar {
+    width: 20%;
+    max-width: 125px;
+    display: flex;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__item {
+    margin-bottom: 30px;
+}
+
+.menu__link {
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: #4b73b5;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    color: #221f1f;
+}
+
+.menu__link::before {
+    content: "";
+    margin-right: 19px;
+    width: 24px;
+    height: 18px;
+    background: center center no-repeat;
+}
+
+.menu__link_active {
+    color: black;
+}
+
+.menu__link_plane:before {
+    background-image: url(../img/main_icon-non-active.png);
+}
+
+.menu__link_active_plane:before {
+    background-image: url(../img/main_icon.png);
+}
+
+.menu__link_rewies:before {
+    background-image: url(../img/feed_icon.png);
+}
+
+.menu__link_active_reviews:before {
+    background-image: url(../img/feed_icon_active.png);
+}
+
+.menu__link_team:before {
+    background-image: url(../img/team_icon.png);
+}
+
+.menu__link_active_team:before {
+    background-image: url(../img/team_icon-active.png);
+}

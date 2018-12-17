@@ -1,0 +1,81 @@
+
+.tariffs {
+    margin-bottom: 30px;
+}
+
+.tariffs__list {
+    display: flex;
+}
+
+.tariffs__item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.tariffs__item:hover {
+    border-radius: 5px;
+    border: 1px solid #e8e9ed;
+}
+
+.tariffs__icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #4b73b5 center center no-repeat;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.tariffs__icon_flower {
+    background-image: url(../img/flower.png);
+}
+
+.tariffs__icon_star {
+    background-image: url(../img/mark-as-favorite-star.png);
+}
+
+.tariffs__icon_palette {
+    background-image: url(../img/painter-palette.png);
+}
+
+.tariffs__description {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.tariffs__description-list li {
+list-style-type: disc;
+text-align: left;
+}
+
+.tariffs__description-list {
+    padding-left: 20px;
+    margin-bottom: 36px;
+}
+
+.tariffs__description-item {
+    padding-left: 25px;
+}
+
+.tariffs__price {
+text-align: center;
+}
+
+.tariffs__price_dollar {
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.tariffs__price_number {
+    font-size: 54px;
+    font-weight: 400;
+    padding-left: 4px;
+}

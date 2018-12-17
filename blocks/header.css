@@ -1,0 +1,25 @@
+header {
+    background-color: #4b73b5;
+    width: 100%;
+    min-height: 76px;
+    color: #fff;
+    margin-bottom: 45px;
+}
+
+.header__container {
+    display: flex;
+}
+
+
+.header__col {
+    width: 50%;
+    display: flex;
+}
+
+.header__col_align-right {
+    justify-content: flex-end;
+}
+
+header .logo {
+    margin-top: 20px;
+}

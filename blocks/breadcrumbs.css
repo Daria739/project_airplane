@@ -1,0 +1,25 @@
+.breadcrumbs {
+    margin-top: -6px;
+
+}
+
+.breadcrumbs__list {
+    display: flex;
+}
+
+.breadcrumbs__link {
+font-size: 14px;
+font-style: italic;
+color: #1c5bc3;
+font-weight: 300;
+text-decoration: underline;
+}
+
+.breadcrumbs__item_non-active:after {
+    content: "/";
+}
+
+.breadcrumbs__link_active {
+    color: #221f1f;
+    text-decoration: none;
+}
