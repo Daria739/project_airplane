@@ -1,13 +1,13 @@
 
 .content__list {
-    margin-top: 22px;
     margin-bottom: 50px;
 }
 
 .content__item {
+    padding-top: 30px;
+    padding-bottom: 20px;
     display: flex;
     width: 836px;
-    margin-bottom: 25px;
 }
 
 .content__avatar {
