@@ -1,8 +1,6 @@
 .sidebar {
     width: 26%;
     margin-right: 25px;
-    display: flex;
-    flex-direction: column;
 }
 
 .menu__list {
