@@ -1,16 +1,16 @@
 .sidebar {
-    width: 20%;
-    max-width: 125px;
-    display: flex;
-}
-
-.menu__list {
+    width: 26%;
+    margin-right: 25px;
     display: flex;
     flex-direction: column;
 }
 
+.menu__list {
+    display: flex;
+}
+
 .menu__item {
-    margin-bottom: 30px;
+    margin-right: 70px;
 }
 
 .menu__link {
@@ -29,10 +29,11 @@
 
 .menu__link::before {
     content: "";
-    margin-right: 19px;
+    margin-right: 16px;
     width: 24px;
     height: 18px;
-    background: center center no-repeat;
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
 }
 
 .menu__link_active {
@@ -40,25 +41,37 @@
 }
 
 .menu__link_plane:before {
-    background-image: url(../img/main_icon-non-active.png);
+    background-position: -72px -61px;
+}
+
+.menu__link_plane:hover::before {
+    background-position: -97px -33px;
 }
 
 .menu__link_active_plane:before {
-    background-image: url(../img/main_icon.png);
+    background-position: -97px -33px;
 }
 
-.menu__link_rewies:before {
-    background-image: url(../img/feed_icon.png);
+.menu__link_reviews:before {
+    background-position: -71px -5px;
+}
+
+.menu__link_reviews:hover::before {
+    background-position: -5px -33px;
 }
 
 .menu__link_active_reviews:before {
-    background-image: url(../img/feed_icon_active.png);
+    background-position: -5px -33px;
 }
 
 .menu__link_team:before {
-    background-image: url(../img/team_icon.png);
+    background-position: -5px -86px;
+}
+
+.menu__link_team:hover::before {
+    background-position: -38px -86px;
 }
 
 .menu__link_active_team:before {
-    background-image: url(../img/team_icon-active.png);
+    background-position: -38px -86px;
 }

@@ -45,8 +45,7 @@ li {
 }
 
 .main__content{
-    width: 80%; 
-    min-width: 920px;
+    width: 74%; 
     display: flex;
     flex-direction: column;
 }

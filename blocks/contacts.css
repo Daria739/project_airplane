@@ -11,8 +11,34 @@
     text-decoration: none;
 }
 
+.contacts__dropdown {
+    position: relative;
+    display: inline-flex;
+}
 
-.contacts__description {
+.contacts__dropdown:hover .contacts__dropdown_menu {
+    right: 0;
+    display: block;
+    opacity: 1;
+    
+}
+
+.contacts__dropdown:hover .contacts__dropdown_btn {
+    color: rgba(255, 255, 255, 1);
+    transition-duration: 0.2s;
+    
+}
+
+.contacts__dropdown:hover:after {
+    position: absolute;
+    left: 75px;
+    content: "";
+    border: 10px solid transparent;
+    z-index: 1;
+    border-bottom-color: #fff;
+}
+
+.contacts__dropdown_btn {
     background: none;
     border: none;
     color: rgba(255, 255, 255, 0.7);
@@ -20,4 +46,40 @@
     text-decoration: underline;
     padding: 0;
 
+}
+
+.contacts__dropdown_menu {
+    position: absolute;
+    background: #fff;
+    font-size: 14px;
+    line-height: 1em;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    width: 163px;
+    top: 100%;
+    text-align: left;
+    display: none;
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.contacts__dropdown_menu:before {
+    content: "";
+    display: block;
+    height: 30px;
+    left: 0;
+    right: 0;
+    top: -29px;
+    position: absolute;
+}
+
+.contacts__dropdown_schedule {
+    color: #1c5bc3;
+    font-weight: 700;
+}
+
+.contacts__dropdown_break-time {
+    color: #221f1f;
+    font-weight: 300;
 }

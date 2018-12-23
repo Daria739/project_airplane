@@ -1,9 +1,9 @@
 .faq {
-    width: 100%;
-    background-color: #4bb56b;
-    min-height: 170px;
+    max-width: 277px;
+    background-color: #4b73b5;
     display: flex;
     background-image: url('../img/pattern.png');
+    margin-bottom: 30px;
     
 }
 
@@ -11,12 +11,12 @@
     color: #fff;
     font-weight: 300;
     font-size: 18px;
+    text-align: center;
     min-height: 80px;
     line-height: 1.7em;
     width: 625px;
     margin: 0 auto;
-    margin-top: 15px;
-    padding: 24px 0px;
+    padding: 30px 13px;
 }
 
 .faq__text_mark-request {

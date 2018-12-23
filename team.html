@@ -9,6 +9,7 @@
     <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 
 <body>
@@ -28,7 +29,16 @@
                 <div class="header__col header__col_align-right">
                     <adress class="contacts">
                         <a href="tel:+78000039210" class="contacts__phone">8(800) 00-392-10</a>
-                        <button class="contacts__description">График работы</button>
+                        
+                        <div class="contacts__dropdown">
+                            <button class="contacts__dropdown_btn">График работы</button>
+
+                            <div class="contacts__dropdown_menu"> 
+                                <p class="contacts__dropdown_schedule">пн-вс: 09:00-20:00</p>
+                                <p class="contacts__dropdown_break-time">обед: 14:00-14:30</p>
+                            </div>
+
+                        </div>
                     </adress>
                 </div>
         
@@ -39,39 +49,97 @@
             <div class="container main__container">
 
                 <aside class="sidebar">
-                    <nav class="menu">
-                
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <div class="menu__item_active">
-                                    <a href="./main.html" class="menu__link menu__link_plane">Главная</a>
-                                </div>
-                            </li>
-                
-                
-                            <li class="menu__item">
-                                <a href="./reviews.html" class="menu__link menu__link_rewies">Отзывы</a>
-                            </li>
-                
-                            <li class="menu__item">
-                                <span class="menu__link menu__link_active menu__link_active_team">Экипаж</span>
-                            </li>
-                        </ul>
-                
-                    </nav>
+                        <section class="partners">
+                            <h2 class="title partners__title">Партнёры</h2>
+                        
+                            <ul class="partners__list">
+                                <li class="partners__item">
+                        
+                                    <a href="#" class="partners__link">
+                                        <img src="./img/bmp-company.png" class="partners__logo" alt="bmp-company">
+                                    </a>
+                        
+                                </li>
+    
+                                <li class="partners__item">
+                        
+                                    <a href="#" class="partners__link">
+                                        <img src="./img/tetra-install.png" class="partners__logo" alt="tetra-install">
+                                    </a>
+                        
+                                </li>
+    
+                                <li class="partners__item">
+                        
+                                    <a href="#" class="partners__link">
+                                        <img src="./img/sib-avia.png" class="partners__logo" alt="sib-avia">
+                                    </a>
+                        
+                                </li>
+    
+                                <li class="partners__item">
+                    
+                                    <a href="#" class="partners__link">
+                                        <img src="./img/one-air.png" class="partners__logo" alt="one-air">
+                                    </a>
+                        
+                                </li>
+    
+                                <li class="partners__item">
+                        
+                                    <a href="#" class="partners__link">
+                                        <img src="./img/bing-air.png" class="partners__logo" alt="bing-air">
+                                    </a>
+                        
+                                </li>
+    
+                                <li class="partners__item">
+                        
+                                    <a href="#" class="partners__link">
+                                        <img src="./img/ural.png" class="partners__logo" alt="ural">
+                                    </a>
+                        
+                                </li>
+                            </ul>
+                        
+                        </section>
+
+                        <div class="social">
+                            <h3 class="social__title">Наши социальные сети</h3>
+                            <ul class="social__list">
+                                <li class="social__item"><a href="#" class="social__item_link"><div class="social__item_link-pic social__item_link-pic-vk"></div></a></li>
+                                <li class="social__item"><a href="#" class="fb"><div class="social__item_link-pic social__item_link-pic-fb"></div></a></li>
+                                <li class="social__item"><a href="#" class="google"><div class="social__item_link-pic social__item_link-pic-google"></div></a></li>
+                                <li class="social__item"><a href="#" class="twitter"><div class="social__item_link-pic social__item_link-pic-twit"></div></a></li>
+                                <li class="social__item"><a href="#" class="mail"><div class="social__item_link-pic social__item_link-pic-mail"></div></a></li>
+                            </ul>
+                        </div>
+
                 </aside>
 
                 <div class="main__content">
-                    <div class="breadcrumbs">
-                        <ul class="breadcrumbs__list">
-                            <li class="breadcrumbs__item breadcrumbs__item_non-active">
-                                <a class="breadcrumbs__link" href="./main.html">Главная</a>
-                            </li>
-                            <li class="breadcrumbs__item_active">
-                                <span class="breadcrumbs__link breadcrumbs__link_active">Экипаж</span>
-                            </li>
-                        </ul>
-                    </div>
+
+                        <nav class="menu">
+                
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <div class="menu__item_active">
+                                        <a href="./main.html" class="menu__link menu__link_plane">Главная</a>
+                                    </div>
+                                </li>
+                    
+                    
+                                <li class="menu__item">
+                                    <a href="./reviews.html" class="menu__link menu__link_reviews">Отзывы</a>
+                                </li>
+                    
+                                <li class="menu__item">
+                                    <span class="menu__link menu__link_active menu__link_active_team">Экипаж</span>
+                                </li>
+                            </ul>
+                    
+                        </nav>
+
                     
                     <section class="team">
                         <h1 class="title">Экипаж</h1>
@@ -204,60 +272,7 @@
                     
                     </section>
                     
-                    <section class="partners">
-                        <h2 class="title">Партнёры</h2>
                     
-                        <ul class="partners__list">
-                            <li class="partners__item">
-                    
-                                <a href="#" class="partners__link">
-                                    <img src="./img/bmp-company.png" class="partners__logo" alt="bmp-company">
-                                </a>
-                    
-                            </li>
-
-                            <li class="partners__item">
-                    
-                                <a href="#" class="partners__link">
-                                    <img src="./img/tetra-install.png" class="partners__logo" alt="tetra-install">
-                                </a>
-                    
-                            </li>
-
-                            <li class="partners__item">
-                    
-                                <a href="#" class="partners__link">
-                                    <img src="./img/sib-avia.png" class="partners__logo" alt="sib-avia">
-                                </a>
-                    
-                            </li>
-
-                            <li class="partners__item">
-                
-                                <a href="#" class="partners__link">
-                                    <img src="./img/one-air.png" class="partners__logo" alt="one-air">
-                                </a>
-                    
-                            </li>
-
-                            <li class="partners__item">
-                    
-                                <a href="#" class="partners__link">
-                                    <img src="./img/bing-air.png" class="partners__logo" alt="bing-air">
-                                </a>
-                    
-                            </li>
-
-                            <li class="partners__item">
-                    
-                                <a href="#" class="partners__link">
-                                    <img src="./img/ural.png" class="partners__logo" alt="ural">
-                                </a>
-                    
-                            </li>
-                        </ul>
-                    
-                    </section>
                 </div>
 
 
@@ -275,19 +290,6 @@
                     <a href="main.html"><div class="logo"><img src="./img/logo_header.png" class="logo__image" alt="логотип"></div></a>
                 </div>
         
-                <div class="footer__social clearfix">
-                    <h3>Наши социальные сети</h3>
-                    <ul class="social__list">
-                        <li class="social__item"><a href="#" class="vk"><img src="./img/vk.png" class="vk__icon" alt="ВК"></a></li>
-                        <li class="social__item"><a href="#" class="fb"><img src="./img/fb.png" class="fb__icon" alt="FB"></a></li>
-                        <li class="social__item"><a href="#" class="google"><img src="./img/google.png" class="google__icon"
-                                    alt="g+"></a></li>
-                        <li class="social__item"><a href="#" class="twitter"><img src="./img/twitter.png" class="twitter__icon"
-                                    alt="twit"></a></li>
-                        <li class="social__item"><a href="#" class="mail"><img src="./img/mail.png" class="mail__icon"
-                                    alt="mail"></a></li>
-                    </ul>
-                </div>
             </div>
             
         </footer> 
